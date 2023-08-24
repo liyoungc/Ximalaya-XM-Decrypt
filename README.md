@@ -1,8 +1,22 @@
-<h1 align="center">喜马拉雅xm文件解密工具</h1>
-<h4 align="center">Ximalaya-XM-Decrypt</h4>
+<h1 align="center">XM Decoder</h1>
+<h4 align="center">A utility to decrypt Ximalaya .xm audio files</h4>
+Introduction
+The XM Decoder is a tool designed to decrypt .xm files, which are commonly associated with the Ximalaya audio platform. While these files can't be played on standard audio players due to their proprietary encryption, this utility can decrypt them into more common formats, such as MP3, M4A, FLAC, and AAC.
 
-### 说明
+This tool serves as a solution for those who need a way to convert their Ximalaya downloads into universally playable formats. Furthermore, it supports batch processing, enabling users to decrypt multiple files at once.
 
-由于喜马拉雅官方客户端下载的音频文件为加密格式，无法在普通播放器中播放，所以我写了这个小工具来解密喜马拉雅下载的音频文件。本工具参考@aynakeya的[博文](https://www.aynakeya.com/2023/03/15/ctf/xi-ma-la-ya-xm-wen-jian-jie-mi-ni-xiang-fen-xi/)，并加入了批量解密的功能。我还写了一个程序[Ximalaya-Downloader](https://github.com/Diaoxiaozhang/Ximalaya-Downloader)，用于直接爬取未加密的喜马拉雅音频文件。本工具作为Ximalaya-Downloader的补充，当每日下载vip音频达到上限时，可以使用客户端下载加密的xm文件并使用本工具解密。
+Prerequisites
+Ensure you have ffmpeg installed and accessible from the command line. This is necessary for the audio format conversion feature.
+Always maintain a backup of your original .xm files before using this tool.
+It's essential for the xm_encryptor.wasm file to be in the same directory as the main script for the decryption process to work.
 
-在使用该软件时，请确保xm_encryptor.wasm文件与主程序文件处在同一目录下，最好是一个单独的文件夹。
+Usage
+python main.py -i /path/to/input/directory -o /path/to/output/directory -f mp3
+
+Options:
+-i, --input: (Required) Path to the input directory containing the .xm files to decrypt.
+-o, --output: Path to the output directory where decrypted files will be saved. Default is ./output.
+-f, --format: The desired output format for the decrypted files. Supported values are mp3, m4a, flac, and aac. Default is mp3.
+
+Disclaimer
+This tool is intended for personal and educational use only. Always respect copyright laws and platform terms of service when using this or any other related tool.
