@@ -1,5 +1,12 @@
-mutagen
+base64
+io
+sys
+magic
+pathlib
+os
+subprocess
+glob
 pycryptodome
+mutagen
 wasmer
-python-magic-bin
-wasmer_compiler_cranelift
+wasmer-compiler-cranelift
