@@ -3,9 +3,7 @@
 
 ### Introduction
 
-The XM Decoder is a tool designed to decrypt `.xm` files, which are commonly associated with the Ximalaya audio platform. While these files can't be played on standard audio players due to their proprietary encryption, this utility can decrypt them into more common formats, such as MP3, M4A, FLAC, and AAC.
-
-This tool serves as a solution for those who need a way to convert their Ximalaya downloads into universally playable formats. Furthermore, it supports batch processing, enabling users to decrypt multiple files at once.
+This repository is a fork of [Diaoxiaozhang's Ximalaya-XM-Decrypt](https://github.com/Diaoxiaozhang/Ximalaya-XM-Decrypt). The original tool was designed to decrypt Ximalaya's .xm audio files, and this fork introduces various enhancements and improvements to the original code, adding the abilitiy to make sure the output files are in the desired format.
 
 ### Prerequisites
 
